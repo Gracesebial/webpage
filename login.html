@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Coffee Tea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+  <main class="auth-card">
+    <h2>Sign in</h2>
+    <form id="loginForm">
+      <label>Email
+        <input id="loginEmail" type="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input id="loginPass" type="password" required placeholder="••••••">
+      </label>
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <button type="submit" class="btn">Login</button>
+        <a class="link-btn" href="register.html">Register</a>
+      </div>
+      <div id="loginMsg" class="muted small"></div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

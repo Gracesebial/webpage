@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coffee Tea — Daily Brew</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="brand">
+        <div class="logo-circle">☕</div>
+        <div class="brand-text">
+          <div class="brand-title">Coffee Tea</div>
+          <div class="brand-sub">DAILY BREW</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <button id="accountBtn" class="icon-btn" title="Account">👤</button>
+      <button id="cartToggle" class="icon-btn" title="Cart">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <section class="search-wrap">
+    <input id="searchInput" type="search" placeholder="Search for affordable drinks..." />
+    <button id="searchBtn" class="search-btn">SEARCH</button>
+  </section>
+
+  <!-- HERO / BANNER -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="starting">Starting at just <span class="price-highlight">₱39.00</span></div>
+      <button id="orderNow" class="cta-btn">Order Now</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <main class="container">
+    <section class="products" id="productsGrid" aria-label="Products">
+      <!-- product cards inserted by JS -->
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>At Coffee Tea we make handcrafted drinks that give you a quick pick-me-up without breaking the bank. Fresh, warm, and made with care.</p>
+      <div class="about-images">
+        <div class="about-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=60')"></div>
+        <div class="about-img" style="background-image:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=60')"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CART PANEL (slide-in simple) -->
+  <aside id="cartPanel" class="cart-panel hidden">
+    <h3>Your Cart</h3>
+    <div id="cartList" class="cart-list"></div>
+    <div class="cart-footer">
+      <div class="subtotal">Subtotal: <strong id="subtotal">₱0.00</strong></div>
+      <div class="cart-actions">
+        <button id="clearCart" class="btn secondary">Clear</button>
+        <button id="checkoutLocal" class="btn">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

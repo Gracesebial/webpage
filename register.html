@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Coffee Tea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+  <main class="auth-card">
+    <h2>Create account</h2>
+    <form id="registerForm">
+      <label>Full name
+        <input id="regName" type="text" required placeholder="Your name">
+      </label>
+      <label>Email
+        <input id="regEmail" type="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input id="regPass" type="password" required placeholder="At least 6 characters">
+      </label>
+
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <button type="submit" class="btn">Register</button>
+        <a class="link-btn" href="login.html">Back to login</a>
+      </div>
+      <div id="regMsg" class="muted small"></div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
